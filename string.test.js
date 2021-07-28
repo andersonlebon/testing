@@ -1,4 +1,4 @@
-const stringLength = require('./string');
+const { stringLength, reverseString } = require('./string');
 
 test('Return the length of the string', () => {
   const result = stringLength('hello');
@@ -15,6 +15,7 @@ test('Should throw out an error', () => {
   ).toThrow();
 });
 
-// test('Should reverse the string', () => {
-//   const result = stringLength.reverseString;
-// });
+test('Should reverse the string', () => {
+  const result = reverseString('hello');
+  expect(result).toBe('olleh');
+});
