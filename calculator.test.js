@@ -51,19 +51,19 @@ describe('Multiplication', () => {
 
 describe('Division', () => {
   it('Temr1 should be a number', () => {
-    expect(() => calculator.substract('a', 11)).toThrow();
+    expect(() => calculator.divide('a', 11)).toThrow();
   });
   it('Temr2 should be a number', () => {
-    expect(() => calculator.substract(11, 'a')).toThrow();
+    expect(() => calculator.divide(11, 'a')).toThrow();
   });
   it('Temr1 and term2 should be a numbers', () => {
-    expect(() => calculator.substract('a', '55')).toThrow();
+    expect(() => calculator.divide('a', '55')).toThrow();
   });
   it('Temr2 should not be 0', () => {
-    expect(() => calculator.substract(1077, 0)).toThrow();
+    expect(() => calculator.divide(1077, 0)).toThrow();
   });
   it('Should return the Division', () => {
-    const result = calculator.substract(22, 11);
-    expect(result).toBe(2);
+    const result = calculator.divide(22, 11);
+    expect(result).toBeCloseTo(2);
   });
 });
