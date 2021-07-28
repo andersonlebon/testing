@@ -32,3 +32,19 @@ describe('Substraction', () => {
     expect(result).toBe(11);
   });
 });
+
+describe('Multiplication', () => {
+  it('Temr1 should be a number', () => {
+    expect(() => calculator.multiply('a', 11)).toThrow();
+  });
+  it('Temr2 should be a number', () => {
+    expect(() => calculator.multiply(11, 'a')).toThrow();
+  });
+  it('Temr1 and term2 should be a numbers', () => {
+    expect(() => calculator.multiply('a', '55')).toThrow();
+  });
+  it('Should return the Addition', () => {
+    const result = calculator.multiply(2, 11);
+    expect(result).toBe(22);
+  });
+});
