@@ -14,3 +14,7 @@ test('Should throw out an error', () => {
     stringLength('Heloo there my name is caleb buyana and i love you all')
   ).toThrow();
 });
+
+// test('Should reverse the string', () => {
+//   const result = stringLength.reverseString;
+// });

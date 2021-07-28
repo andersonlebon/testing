@@ -1,4 +1,4 @@
-module.exports = function stringLength(string) {
+const stringLength = (string) => {
   if (string.length < 1 || string.length >= 10) {
     throw new Error('this condition is invalid');
   }
@@ -10,3 +10,4 @@ const reverseString = (string) => {
 };
 
 exports.reverseString = reverseString;
+exports.stringLength = stringLength;
