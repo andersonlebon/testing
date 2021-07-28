@@ -1,4 +1,3 @@
-// import { stringLength } from './string';
 const stringLength = require('./string');
 
 test('Return the length of the string', () => {

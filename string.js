@@ -4,3 +4,9 @@ module.exports = function stringLength(string) {
   }
   return string.length;
 };
+
+const reverseString = (string) => {
+  return string.revese();
+};
+
+exports.reverseString = reverseString;
